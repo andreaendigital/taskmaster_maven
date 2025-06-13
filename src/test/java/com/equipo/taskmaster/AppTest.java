@@ -1,0 +1,14 @@
+package com.equipo.taskmaster;
+
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+public class AppTest {
+    @Test
+    public void testAddTask() {
+        App.tasks.clear();
+        App.addTask("Terminar ejercicio Maven");
+        assertEquals(1, App.tasks.size());
+    }
+}
+
