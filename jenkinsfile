@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {
         maven 'Maven'
-        jdk 'JDK24'
+        jdk 'JDK21'
     }
     stages {
         stage('Clonar') {
