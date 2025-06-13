@@ -7,7 +7,8 @@ pipeline {
     stages {
         stage('Clonar') {
             steps {
-                git 'https://github.com/andreaendigital/taskmaster_maven.git'
+                git branch: 'main', url: 'https://github.com/andreaendigital/taskmaster_maven.git'
+
             }
         }
         stage('Compilar') {
